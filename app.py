@@ -9,7 +9,7 @@ class Item(BaseModel):
     price: float
     is_offer: bool | None = None
 
-@app.get("/")
+@app.get("/health")
 async def read_root():
     return {"Hello": "World"}    
 
