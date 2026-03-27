@@ -1,0 +1,17 @@
+# databricks.yml
+bundle:
+  name: my-fastapi-app
+
+resources:
+  apps:
+    my-app:
+      name: my-fastapi-app
+      # Path to the folder containing app.py and app.yaml
+      source_code_path: ./ 
+
+targets:
+  dev:
+    default: true
+    mode: development
+    workspace:
+      host: https://dbc-3cd0e18a-cab0.cloud.databricks.com/?o=7474647710173669
