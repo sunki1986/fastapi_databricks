@@ -15,7 +15,7 @@ jobs:
 
       - name: Deploy Bundle
         run: databricks bundle deploy -t dev
-        working-directory: ./fastapi_databricks
+        working-directory: .
         env:
           DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }}
           DATABRICKS_CLIENT_ID: ${{ secrets.DATABRICKS_CLIENT_ID }}
